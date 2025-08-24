@@ -1,0 +1,23 @@
+https://github.com/sparfenyuk/mcp-proxy
+
+1. Installed Cursor and node js.
+2. Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass - for system access
+3.npm i @mulesoft/mcp-server
+4. setting tab add server :
+{
+  "mcpServers": {
+    "mulesoft": {
+      "command": "npx",
+      "args": ["-y", "@mulesoft/mcp-server", "start"],
+      "env": {
+        "ANYPOINT_CLIENT_ID": "16247978401344d5b1c8ba89832721385",
+        "ANYPOINT_CLIENT_SECRET": "b79CE248bD884A73b7918B82660BF9CD5",
+        "ANYPOINT_REGION": "PROD_CA"
+      }
+    }
+  }
+}
+
+
+
+reference: https://www.npmjs.com/package/@mulesoft/mcp-server?activeTab=readme
